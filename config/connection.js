@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 });
 
 // Make a connection
-HTMLFormControlsCollection.connect(function(err) {
+connection.connect(function(err) {
     if (err) {
         console.error("error connecting: " + err.stack);
         return;
